@@ -1,1 +1,2 @@
-Simulating that some collaborator added new feature and pushed it to remote repository
+Simulating that some collaborator added new feature and pushed it to remote repository.
+This text was added after collaborator pushed this file to a remote, but another collaborator force pushed his changes.
