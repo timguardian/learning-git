@@ -1,0 +1,1 @@
+Simulating that some collaborator added new feature and pushed it to remote repository
