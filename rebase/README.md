@@ -50,3 +50,19 @@ How to Choose?
 - Rebase to add minor commits in master to a topic branch
 - Rebase to move commits from one branch to another
 - Merge anytime the topic branch is already public and being used by others (The Golden Rule of Rebasing)
+
+Rebase onto other branches  
+`git rebase --onto newbase upstream branch`  
+Example: `git rebase --onto master ecommerce new_feature`
+
+Undo a Rebase
+
+- Can undo simple rebases
+- Rebase is destructive
+- SHAs, commit messages, change sets, and more
+- Undoing complex rebases may lose data
+
+Undo, unless ORIG_HEAD has changed again:  
+`git reset --hard ORIG_HEAD`  
+Undo by rebasing to former merge-base SHA:  
+`git rebase --onto 9291f0c88 master new_feature`
